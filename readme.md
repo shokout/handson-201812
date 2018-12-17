@@ -1,6 +1,6 @@
-# SageMaker PyTorch ハンズオン
+# Amazon SageMaker Tensorflow ハンズオン
 
-このハンズオンは [Amazon SageMaker](https://aws.amazon.com/jp/sagemaker/) 上で [PyTorch](https://pytorch.org/) を使った機械学習/深層学習を学ぶことを目的としています。
+このハンズオンは [Amazon SageMaker](https://aws.amazon.com/jp/sagemaker/) 上で [Tensorflow](https://www.tensorflow.org/) を使った機械学習/深層学習を学ぶことを目的としています。
 
 ## 学べること
 このコースを終えたあと、以下のような概念/方法を習得することができます。

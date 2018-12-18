@@ -9,6 +9,7 @@
 1. Amazon SageMaker Neo を使ったモデルコンパイル
 1. Amazon SageMaker を使ったHPO最適化
 1. Amazon SageMaker/Tensorflow を使ったTensorboardの使い方
+1. Amazon SageMaker でKerasを使ったMNIST分類
 
 なお、以下の知識を前提とします。
 1. 機械学習/深層学習の概念と一般的な理解
@@ -21,6 +22,7 @@
 1. Tensorflow Containerを使ったHPO [[notebook](https://github.com/shokout/handson-201812/blob/master/tensorflow_mnist_hpo/hpo_tensorflow_mnist.ipynb)]
 1. HPO ジョブの可視化 [[notebook](https://github.com/shokout/handson-201812/blob/master/tensorflow_mnist_hpo/HPO_Analyze_TuningJob_Results.ipynb)]
 1. ResNet Cifer10によるTensorflowboardの利用[[notebook](https://github.com/shokout/handson-201812/blob/master/tensorflow_resnet_cifar10_with_tensorboard/tensorflow_resnet_cifar10_with_tensorboard.ipynb)]
+1. Keras (Tensorflow Backend) を利用してMNISTの分類を行う[[notebook](https://github.com/shokout/handson-201812/blob/master/keras_tensorflow/keras_tensorflow_mnist.ipynb)]
 
 
 ### 1. [分散学習](https://github.com/shokout/handson-201812/blob/master/tensorflow_distributed_mnist/tensorflow_distributed_mnist_neo.ipynb "SAGEMAKER PYTHON SDK > tensorflow_distributed_mnist_neo.ipynb")
@@ -51,6 +53,11 @@
     
     を実行し、 `warm_start_config=hpo_warm_start_config` を `HyperparameterTuner()` 作成時に追加。
 
-### 3. [Tensorflow TensorBoard](https://github.com/shokout/handson-201812/blob/master/tensorflow_resnet_cifar10_with_tensorboard/tensorflow_resnet_cifar10_with_tensorboard.ipynb "tensorflow_resnet_cifar10_with_tensorboard > tensorflow_resnet_cifar10_with_tensorboard.ipynb")
+### 3. [TensorBoardの利用方法](https://github.com/shokout/handson-201812/blob/master/tensorflow_resnet_cifar10_with_tensorboard/tensorflow_resnet_cifar10_with_tensorboard.ipynb "tensorflow_resnet_cifar10_with_tensorboard > tensorflow_resnet_cifar10_with_tensorboard.ipynb")
 - SageMakerからTensorBoardを利用できます。
 - Cifar10 を使った学習スクリプト [`source/cifar10.py`](https://github.com/shokout/handson-201812/blob/master/tensorflow_resnet_cifar10_with_tensorboard/source_dir/resnet_cifar_10.py) が用意されているので、これをエントリーポイントとした SageMaker の学習を行います。
+
+### 4. [Keras on Tensorflow](https://github.com/shokout/handson-201812/blob/master/keras_tensorflow/keras_tensorflow_mnist.ipynb)
+- Amazon SageMaker上でKerasを実行し、MNISTの手書き数字の分類を学習します。
+- バックエンドはTensorflow。
+
